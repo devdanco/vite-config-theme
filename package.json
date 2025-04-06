@@ -20,8 +20,7 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
-    "@mantine/core": "7.17.2",
-    "@mantine/hooks": "7.17.2",
+    "@mononxtest/ui-lib": "^0.0.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.4.0"

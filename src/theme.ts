@@ -1,12 +1,14 @@
-import { createTheme } from '@mantine/core';
+import { createTheme, customTheme, mergeThemeOverrides } from '@mononxtest/ui-lib';
 
-export const theme = createTheme({
-  /** Put your mantine theme override here */
+const ownTheme = createTheme({
+  primaryColor: 'cyan',
   spacing: {
-    xs: '0.75rem',
-    sm: '1rem',
-    md: '1.5rem',
-    lg: '2rem',
-    xl: '2.5rem',
+    xs: 'calc(2rem * var(--mantine-scale))',
+    sm: 'calc(4rem * var(--mantine-scale))',
+    md: 'calc(6rem * var(--mantine-scale))',
+    lg: 'calc(8rem * var(--mantine-scale))',
+    xl: 'calc(10rem * var(--mantine-scale))',
   },
 });
+
+export const theme = mergeThemeOverrides(customTheme, ownTheme);

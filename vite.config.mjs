@@ -21,5 +21,10 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './vitest.setup.mjs',
+    server: {
+      deps: {
+        inline: ['@mononxtest/ui-lib'],
+      },
+    }
   },
 });

@@ -1,9 +1,10 @@
-import { Anchor, Text, Title } from '@mantine/core';
-import classes from './Welcome.module.css';
+import { Anchor, Text, Title, Button } from '@mononxtest/ui-lib';
+import classes from './Welcome.module.scss';
 
 export function Welcome() {
   return (
     <>
+      <Button className={classes.btnn}>THIS IS BUTTON</Button>
       <Title className={classes.title} ta="center" mt={100}>
         Welcome to{' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>

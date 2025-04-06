@@ -1,4 +1,4 @@
-import { Button, Group, useMantineColorScheme } from '@mantine/core';
+import { Button, Group, useMantineColorScheme } from '@mononxtest/ui-lib';
 
 export function ColorSchemeToggle() {
   const { setColorScheme } = useMantineColorScheme();
